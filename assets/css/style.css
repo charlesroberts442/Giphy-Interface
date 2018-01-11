@@ -1,0 +1,65 @@
+/***********************************************************************
+ * Copyright (c) 2018 Charles W. Roberts
+ * All Rights Reserved
+ *
+ * No portion of this code may be copied or modified without the
+ * prior written permission of Charles Roberts.
+ *
+ ***********************************************************************/
+body{
+	background-color: powderblue;
+}
+
+.jumbotron{
+  padding-bottom: 0.1em;
+  padding-top: 0.1em;
+  background-color: powderblue;
+}
+
+.giphy{
+  
+    left: 0;
+    
+    width: 100%;
+    text-align: center;
+    font-size: small;
+}
+
+#input_area{ 
+  background-color: #eaeaea;
+  height: 10em;
+  max-height: 10em;
+  max-width:100%; 
+  min-height: 1em;
+  min-width:100%; 
+  padding:0.5em;
+  width: 100%; 
+}
+
+.giphy-button{
+  margin-left: 0.5em;
+  margin-bottom: 0.5em
+}
+
+.animalBtn{
+  margin-left: 1em;
+  margin-bottom: 0.5em
+}
+
+
+.Copyright {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    text-align: right;
+    width: 100%;
+    font-size: small;
+}
+
+
+@media screen and ( max-height: 768px )
+{
+  .Copyright{
+    position: relative;
+	}
+}

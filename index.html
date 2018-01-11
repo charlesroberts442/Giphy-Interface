@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<!-- 
+ * Copyright (c) 2018 Charles W. Roberts
+ * All Rights Reserved
+ *
+ * No portion of this code may be copied or modified without the
+ * prior written permission of Charles Roberts.
+ *
+ -->
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta author="Charles Roberts">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <!-- Local style sheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Giphy</title>
+</head>
+
+
+
+
+
+
+<body>
+
+     <br>
+            <h4 class="giphy">Powered By GIPHY</h4>       
+
+	<div class="container">
+
+    <div class="jumbotron jumbotron-fluid blue_box">
+        <div class="container blue_box">
+            <h1 class="text-center">Animated Gifs</h1>
+            
+            <p id="instructions" >Giphy is an online database and search engine of animated gifs. There is more information about Giphy at the <a href="https://en.wikipedia.org/wiki/Giphy" target="blank">wikipedia site</a>, and at <a href="https://giphy.com/" target="blank">the Giphy home page.</a></p>
+            <p>This webpage is an interface to the Giphy database.  Enter a name or phrase that is the subject of a gif image in the Name box and click add.  This will create a button with that name or phrase.  Next, click the newly added button to download ten animated gifs from Giphy.</p>
+            <p><i>Note:  The initial images will be still images, but clicking on the image will change it from a still image to an animated one.</i></p>
+            
+
+        </div><!-- End of <div class="container blue_box">  -->
+
+    </div><!-- End of  <div class="jumbotron jumbotron-fluid blue_box"> -->
+
+
+	<!-- ======================= Bootstrap Row One ======================== -->
+	<div class="row">
+
+
+	<!-- =================== A Column for Animal Buttons ================== -->
+    
+        <div class="col-sm-8">
+            <div class="row button-area">
+        	       <!-- Javascript will put buttons here. -->
+            </div>
+             <div class="row">
+                    <button class="giphy-button" id="clear-btn">Clear Buttons</button>
+                     <button class="giphy-button" id="clear-gifs-btn">Clear Gifs</button>
+                </div>
+                </div>
+       
+
+        
+
+	<!-- =================== A Column for User Input ====================== -->
+    <div class="col-sm-4 input-area">
+		<div class="form-group">
+            <label for="usr">
+                <h5>Name:</h5>
+            </label>
+            <input type="text" class="form-control" id='new-subject'>
+        </div>
+
+        <button id="add-animal-btn">Add</button>
+                    
+
+        	
+        </div><!-- End of <div class="col-sm-8 button-area">
+        
+    </div><!-- -End of <div class="row"> (Row One) -->
+
+
+	<!-- ======================= Bootstrap Row Two ======================== -->
+<div class="row">
+         <div class="col-sm-12 ">
+            <div id=gif-display>
+            </div>
+            </div>
+     </div>
+
+
+	<!-- =================== A Row for a copyright ====================== -->
+ <div class="row">
+         <div class="col-sm-12 ">
+		<p class = "Copyright"><i> &copy 2018 Charles.Roberts@gatech.edu</i> </p>
+         </div>
+     </div>
+
+
+
+
+   
+    <!-- Linking Javascript -->
+    <script type="text/javascript" src="assets/javascript/jquery-3.2.1.min.js">
+    </script>
+    <script type="text/javascript" src="assets/javascript/giphy.js">
+    </script>
+    
+</body>
+
+</html>
